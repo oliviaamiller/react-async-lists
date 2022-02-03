@@ -1,7 +1,30 @@
-.book-list {
-    border: blue 1px solid;
+.book-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 500px;
 }
 
-.book {
-    border: green 1px solid;
+.book { 
+    margin: .5rem;
+    padding: 1rem;
+    background-color: rgb(222, 45, 80);
+    color: rgb(255, 238, 205);
+    width: 200px;
+    height: 200px;
+    font-size: 14px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.book-title {
+    text-transform: uppercase;
+}
+
+.book p {
+    margin: .25rem;
+    padding: 0;
 }
