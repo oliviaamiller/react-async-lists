@@ -1,0 +1,29 @@
+.cakes-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 500px;
+}
+.cake {
+    background-color: plum;
+    color: rgb(4, 4, 48);
+    margin: .5rem;
+    padding: 1rem;
+    width: 200px;
+    height: 200px;
+    font-size: 14px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.cake-name {
+    text-transform: uppercase;
+}
+
+.cake p {
+    margin: .25rem;
+    padding: 0;
+}

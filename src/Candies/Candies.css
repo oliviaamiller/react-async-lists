@@ -1,0 +1,29 @@
+.candies-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 500px;
+
+}
+.candy {
+    background-color: rgb(119, 119, 238);
+    color: rgb(156, 255, 17);
+    margin: 0.5rem;
+    padding: 1rem;
+    width: 200px;
+    height: 200px;
+    font-size: 14px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.candy-name {
+    text-transform: uppercase;
+}
+
+.candy p {
+    margin: .25rem;
+    padding: 0;
+}

@@ -1,0 +1,30 @@
+.flowers-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 500px;
+}
+
+.flower {
+    background-color: salmon;
+    color: rgb(24, 99, 9);
+    margin: .5rem;
+    padding: 1rem;
+    width: 200px;
+    height: 200px;
+    font-size: 14px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.flower-name {
+    text-transform: uppercase;
+}
+
+.flower p {
+    margin: .25rem;
+    padding: 0;
+}
