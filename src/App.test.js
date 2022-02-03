@@ -3,6 +3,7 @@ import App from './App';
 
 test('renders coffee link', async () => {
   render(<App />);
-  const linkElement = await screen.getByText(/coffee/i);
+  const linkElement = await screen.findByText(/coffee/i);
   expect(linkElement).toBeInTheDocument();
 });
+
