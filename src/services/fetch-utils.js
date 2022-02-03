@@ -15,3 +15,11 @@ export async function fetchCakes() {
 
   return checkError(response);
 }
+
+export async function fetchCandies() {
+  const response = await client
+    .from('candies')
+    .select();
+
+  return checkError(response);
+}

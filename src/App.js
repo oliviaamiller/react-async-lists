@@ -1,7 +1,8 @@
 import './App.css';
 import { useState, useEffect } from 'react';
 import { fetchBooks,
-  fetchCakes } from './services/fetch-utils';
+  fetchCakes,
+  fetchCandies } from './services/fetch-utils';
 import BooksList from './Books/BooksList';
 import CakesList from './Cakes/CakesList';
 import CandiesList from './Candies/CandiesList';
@@ -25,9 +26,17 @@ function App() {
     setCakes(data);
   }
 
+  async function fetchCandiesData() {
+    const data = await fetchCandies();
+
+    setCandies(data);
+  }
+
+
   useEffect(() => {
     fetchBooksData();
     fetchCakesData();
+    fetchCandiesData();
   }, []);
 
 
