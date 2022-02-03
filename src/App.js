@@ -17,8 +17,15 @@ function App() {
     setBooks(data);
   }
 
+  async function fetchCakesData() {
+    const data = await fetchCakes();
+
+    setCakes(data);
+  }
+
   useEffect(() => {
     fetchBooksData();
+    fetchCakesData();
   }, []);
 
 
