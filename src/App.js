@@ -35,11 +35,18 @@ function App() {
     setCandies(data);
   }
 
+  async function fetchFlowersData() {
+    const data = await fetchFlowers();
+
+    setFlowers(data);
+  }
+
 
   useEffect(() => {
     fetchBooksData();
     fetchCakesData();
     fetchCandiesData();
+    fetchFlowersData();
   }, []);
 
 
