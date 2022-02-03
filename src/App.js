@@ -2,10 +2,12 @@ import './App.css';
 import { useState, useEffect } from 'react';
 import { fetchBooks,
   fetchCakes,
-  fetchCandies } from './services/fetch-utils';
+  fetchCandies,
+  fetchFlowers } from './services/fetch-utils';
 import BooksList from './Books/BooksList';
 import CakesList from './Cakes/CakesList';
 import CandiesList from './Candies/CandiesList';
+import FlowersList from './Flowers/FlowersList';
 // import your arrays here
 
 function App() {
@@ -13,6 +15,7 @@ function App() {
   const [books, setBooks] = useState([]);
   const [cakes, setCakes] = useState([]);
   const [candies, setCandies] = useState([]);
+  const [flowers, setFlowers] = useState([]);
 
   async function fetchBooksData() {
     const data = await fetchBooks();
@@ -48,6 +51,8 @@ function App() {
       <CakesList cakes={cakes} />
 
       <CandiesList candies={candies} />
+
+      <FlowersList flowers={flowers} />
     </div>
   );
 }

@@ -23,3 +23,11 @@ export async function fetchCandies() {
 
   return checkError(response);
 }
+
+export async function fetchFlowers() {
+  const response = await client 
+    .from('flowers')
+    .select();
+
+  return checkError(response);
+}
