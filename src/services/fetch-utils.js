@@ -7,3 +7,11 @@ export async function fetchBooks() {
 
   return checkError(response);
 }
+
+export async function fetchCakes() {
+  const response = await client 
+    .from('cakes')
+    .select();
+
+  return checkError(response);
+}
