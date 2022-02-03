@@ -4,12 +4,14 @@ import { fetchBooks,
   fetchCakes } from './services/fetch-utils';
 import BooksList from './Books/BooksList';
 import CakesList from './Cakes/CakesList';
+import CandiesList from './Candies/CandiesList';
 // import your arrays here
 
 function App() {
 
   const [books, setBooks] = useState([]);
   const [cakes, setCakes] = useState([]);
+  const [candies, setCandies] = useState([]);
 
   async function fetchBooksData() {
     const data = await fetchBooks();
@@ -35,6 +37,8 @@ function App() {
       < BooksList books={books} />
       
       <CakesList cakes={cakes} />
+
+      <CandiesList candies={candies} />
     </div>
   );
 }
